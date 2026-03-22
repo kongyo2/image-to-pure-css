@@ -39,13 +39,13 @@ npx kongyo-css <画像ファイル> [オプション]
 
 ```bash
 # 基本的な変換
-kongyo-css photo.png
+npx kongyo-css photo.png
 
 # 幅100pxにリサイズして変換
-kongyo-css photo.png --width 100
+npx kongyo-css photo.png --width 100
 
 # 許容値を設定してファイルサイズを削減
-kongyo-css photo.png --tolerance 10 --output output.txt
+npx kongyo-css photo.png --tolerance 10 --output output.txt
 ```
 
 ### ライブラリとして使用
