@@ -9,7 +9,9 @@ function parseArgs(argv: string[]) {
   const args = argv.slice(2);
 
   if (args.length === 0) {
-    console.error("Usage: kongyo-css <image> [--width N] [--tolerance N] [--output file.txt]");
+    console.error(
+      "Usage: npx @kongyo2/image-to-pure-css <image> [--width N] [--tolerance N] [--output file.txt]",
+    );
     process.exit(1);
   }
 

@@ -24,7 +24,7 @@ npm install @kongyo2/image-to-pure-css
 ### CLI
 
 ```bash
-npx kongyo-css <画像ファイル> [オプション]
+npx @kongyo2/image-to-pure-css <画像ファイル> [オプション]
 ```
 
 #### オプション
@@ -39,13 +39,13 @@ npx kongyo-css <画像ファイル> [オプション]
 
 ```bash
 # 基本的な変換
-npx kongyo-css photo.png
+npx @kongyo2/image-to-pure-css photo.png
 
 # 幅100pxにリサイズして変換
-npx kongyo-css photo.png --width 100
+npx @kongyo2/image-to-pure-css photo.png --width 100
 
 # 許容値を設定してファイルサイズを削減
-npx kongyo-css photo.png --tolerance 10 --output output.txt
+npx @kongyo2/image-to-pure-css photo.png --tolerance 10 --output output.txt
 ```
 
 ### ライブラリとして使用
