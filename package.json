@@ -1,0 +1,51 @@
+{
+  "name": "@kongyo2/kongyo-css",
+  "version": "0.1.0",
+  "description": "Convert images to pure CSS using linear gradients",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "kongyo-css": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "biome check src",
+    "lint:fix": "biome check --write src",
+    "check": "biome check src && tsc --noEmit",
+    "prepublishOnly": "npm run check && npm run build"
+  },
+  "keywords": [
+    "css",
+    "image",
+    "converter",
+    "gradient",
+    "pure-css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongyo2/kongyo-css.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.8",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
